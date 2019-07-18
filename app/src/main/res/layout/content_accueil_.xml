@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Accueil_Activity"
+    android:padding="10dp"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:layout_marginTop="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+    <android.support.v4.view.ViewPager
+    android:layout_width="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_height="130dp"
+    android:background="@drawable/backgroung_carousel">
+</android.support.v4.view.ViewPager>
+    </RelativeLayout>
+<android.support.design.widget.TabLayout
+    android:id="@+id/tablayout_id"
+    app:tabMaxWidth="0dp"
+    app:tabGravity="fill"
+    app:tabSelectedTextColor="@color/colorblanc"
+    android:layout_width="match_parent"
+    android:background="@color/ColorOrange"
+    android:layout_height="wrap_content">
+
+</android.support.design.widget.TabLayout>
+    <android.support.v7.widget.SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/search">
+
+    </android.support.v7.widget.SearchView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_id"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
